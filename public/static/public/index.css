@@ -23,6 +23,8 @@ a:hover{
   color:#FF70A6;
 }
 .btn.btn-outline-light{background-color:#9932cc; color:#ffff  !important;}
+.btn.btn-outline-light a:hover{background-color:#ffffff; color:#9932cc  !important;}
+.btn.btn-outline-light:hover{background-color:#ffff; color:#9932cc  !important;}
 .card1{
       color: #9932cc;
 }

@@ -19,18 +19,19 @@ a{
   border: 1.5px solid #9932cc;
 }
 .btn.btn-outline-light:hover{
-  border: 1.5px solid #9932cc;
-}
-.btn.btn-outline-light{background-color:#9932cc; color:#ffff !important;}
-.btn.btn-outline-light:hover{background-color:#ffff; color:#9932cc !important;}
+  border: 1.5px solid #9932cc;}
 
-form a {
-    color: #9932cc;
-}
+.btn.btn-outline-light a{ color:#ffff !important;}
+.btn.btn-outline-light{background-color:#9932cc; color:#ffff  !important;}
+.btn.btn-outline-light:hover{background-color:#ffff; color:#9932cc  !important;}
+.btn.btn-outline-light a:hover{background-color:#ffff; color:#9932cc  !important;}
+/*
+.btn.btn-outline-light a{background-color:#9932cc; color:#ffff !important;}
+.btn.btn-outline-light:hover{background-color:#ffff; color:#9932cc !important;}
 .btn.btn-outline-info{background-color:#9932cc; color:#ffff !important; }
 .btn.btn-outline-info:hover{background-color:#ffff; color:#9932cc !important; }
-.btn.btn-outline-light.mb-4.mt-4 a{color:#ffff;}
-.btn.btn-outline-light.mb-4.mt-4 a:hover{color:#9932cc;}
+.btn.btn-outline-light.mb-4.mt-4 a{color:#9932cc;}
+.btn.btn-outline-light.mb-4.mt-4 a:hover{color:#ffffff;}*/
 /* start footer*/
 .footer{
 background-color: #f1def7;

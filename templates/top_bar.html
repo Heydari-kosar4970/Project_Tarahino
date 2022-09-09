@@ -20,7 +20,7 @@
                         {% if user.is_authenticated %}
                             <a href="{% url 'logout_user' %}" target="_blank">خروج از حساب کاربری</a>
                         {% else %}
-                            <a href="{% url 'registration_page' %}" target="_blank">ورود/ثبت نام</a>
+                            <a class="kosar" href="{% url 'registration_page' %}" target="_blank">ورود/ثبت نام</a>
                         {% endif %}
                     </button>
                 </form>

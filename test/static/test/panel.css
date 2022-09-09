@@ -1,0 +1,31 @@
+h5{
+  color: #9932cc ;
+}
+a{
+  color: #9932cc ;
+}
+a:hover{
+  color: #9932cc ;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color:#9932cc;
+  }
+button.nav-link{
+  color: #9932cc ;
+}
+button.nav-link:hover{
+  color: #9932cc ;
+}
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color:#9932cc;
+    border-color: #9932cc;
+}
+.bi.bi-grid.fs-5.list-group-item{
+  color: #9932cc ;
+}
+.bi.bi-box-arrow-right.fs-5.list-group-item{
+    color: #9932cc ;
+}
