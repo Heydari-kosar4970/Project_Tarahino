@@ -1,0 +1,52 @@
+/*--start sidbar-*/
+.mx-auto{
+  text-align: center;
+}
+.h4{
+ color:#9932cc;
+}
+.h3{
+ color:#9932cc;
+}
+.fw-bold{
+   color:#9932cc;
+}
+.card-body{
+  border-radius: 0.5rem;
+}
+.btn.btn-light{background-color:#9932cc; color:#ffff !important;}
+input[type="email"]{
+  text-align: right;
+  direction:ltr;
+}
+
+.form-group-Comments input{
+  border:1px solid #9932cc !important;
+  border-radius:0.5rem !important ;
+  transition:all 0.5s ease;
+  padding:10px !important;
+  font-size:13px ;
+  color:#78797c ;
+}
+.form-group-Comments input:focus{
+  border:1px solid #9932cc !important;
+  border-radius:0.7rem !important ;
+  padding:10px !important;
+}
+
+
+.form-group-Comments textarea{
+  border:1px solid #9932cc !important;
+  border-radius:0.5rem !important ;
+  transition:all 0.5s ease;
+  padding:10px !important;
+  font-size:13px ;
+  color:#78797c ;
+}
+.form-group-Comments textarea:focus{
+  border:1px solid #9932cc !important;
+  border-radius:0.7rem !important ;
+  padding:10px !important;
+}
+.btn.btn-outline-light{background-color:#9932cc; color:#ffff !important;}
+.btn.btn-outline-light:hover{background-color:#ffff; color:#9932cc !important;}

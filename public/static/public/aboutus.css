@@ -1,0 +1,35 @@
+.col-12.col-sm-12.col-md-12.col-lg-12.col-xl-12.col-xxl-12.mt-5{
+  text-align: center;
+}
+.socialnetwork{
+  text-align: center;
+}
+.icon4{
+  margin:1rem;
+  color:#FF70A6;
+}
+.h1{
+  font-weight: bold;
+    margin: 20px 0 !important;
+    font-size: 1.5rem;
+    color:#9932cc;
+    text-align: center;
+
+}
+.p1{
+    margin: 20px 0 !important;
+    font-size: 20px;
+    text-align: center;
+}
+.h4{
+  text-align: center;
+      color:#9932cc;
+}
+.h3{
+  color:#9932cc;
+}
+.card.text-dark.bg-light.mb-3{background-color:#FFD9DA;}
+.card-header{background-color:#FFD9DA; text-align: center; color: #9932cc;}
+.card-body{background-color:#FFD9DA;}
+.card-title{background-color:#FFD9DA;  text-align: center; color: #ffff;}
+.card-text{background-color:#FFD9DA; text-align: center; color: #9932cc;}

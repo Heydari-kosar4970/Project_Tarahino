@@ -1,0 +1,104 @@
+/**lin1 and lin2**/
+.row1{
+ box-shadow: 0 0 20px #ebeafb !important;
+ border-radius: 0.5rem;
+}
+.img1{
+  background-color: #8E24AA;
+  border-top-left-radius:0.5rem;
+  border-bottom-left-radius:0.5rem;
+}
+.col-12.col-sm-12.col-md-8.col-lg-8.col-xl-8.col-xxl-8{
+ box-shadow: 0 0 20px #ebeafb !important;
+ border-radius: 0.5rem;
+ margin-top: 1.5rem;
+}
+.card-title{
+  font-size: 10px;
+
+}
+.card-text{
+  font-size: 10px;
+}
+.card-body{
+  background-color:#FBE4FF;
+  border-radius: 0.5rem;
+}
+.card.shadow.text-center.mt-2{
+  border-radius: 0.5rem;
+}
+.icon5{
+  color: #8E24AA;
+}
+.card-title{
+  color: #8E24AA;
+}
+.card-text{
+  color: #8E24AA;
+}
+.col-12.col-sm-12.col-md-3.col-lg-3.col-xl-3.col-xxl-3 h5{
+  font-size:1rem;
+}
+.col-12.col-sm-12.col-md-3.col-lg-3.col-xl-3.col-xxl-3 p{
+        color:#8E24AA;
+}
+.list-group-item.list-group-item-dark{
+  text-align: center;
+  background-color: #FBE4FF;
+  padding: 1rem;
+  color:#8E24AA;
+}
+.list-group.mt-3{
+  box-shadow: 0 0 30px #ebeafb !important;
+}
+.icon-1{
+  color: #8E24AA;
+}
+.progress-bar.bg-success{background-color:#9932cc; color:#ffff  !important;}
+/**lin1 and lin2**/
+/**lin3**/
+.btn.btn-outline-light{background-color:#9932cc; color:#ffff !important;}
+.btn.btn-outline-light:hover{background-color:#ffff; color:#9932cc !important;}
+/**lin3**/
+/**lin4**/
+.d1 img{
+  border-radius:1.5rem;
+}
+/**lin4**/
+/**form**/
+.h3.pt-3.px-2{
+  color:#8E24AA;
+}
+input[type="email"]{
+  text-align: right;
+  direction:ltr;
+}
+.form-group-Comments input{
+  border:1px solid #9932cc !important;
+  border-radius:0.5rem !important ;
+  transition:all 0.5s ease;
+  padding:10px !important;
+  font-size:13px ;
+  color:#78797c ;
+}
+.form-group-Comments input:focus{
+  border:1px solid #9932cc !important;
+  border-radius:0.7rem !important ;
+  padding:10px !important;
+}
+
+
+.form-group-Comments textarea{
+  border:1px solid #9932cc !important;
+  border-radius:0.5rem !important ;
+  transition:all 0.5s ease;
+  padding:10px !important;
+  font-size:13px ;
+  color:#78797c ;
+}
+.form-group-Comments textarea:focus{
+  border:1px solid #9932cc !important;
+  border-radius:0.7rem !important ;
+  padding:10px !important;
+}
+/**form**/

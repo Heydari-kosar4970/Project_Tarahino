@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="{% static 'bootstrap.bundle.min.js' %}" charset="utf-8"></script>
+    <link rel="stylesheet" href="{% static 'public/Contactus.css' %}">
+    <link rel="stylesheet" href="{% static 'public/style.css' %}">
+
+
+{% endblock %}
+{% block title %} ارتباط با ما {% endblock %}
+
+{% block body %}
+
+    <div class="container">
+    <div class="container">
+      <!--start Search and register -->
+
+      <!--end Search and register -->
+      <!--start menu-->
+
+      <!--end menu-->
+<!--start formContact us-->
+<div class="row mb-5">
+  <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 mt-2">
+    <h3 class="h3">ارتباط با ما</h3>
+    <form class="form-group-Contactus">
+        <div class="form-group mt-4">
+            <input type="text" placeholder="نام و نام خانوادگی" class="form-control mt-2 text-muted" required>
+        </div>
+        <div class="form-group mt-4">
+            <input type="email" placeholder="ایمیل" class="form-control mt-2 text-muted" required>
+        </div>
+        <div class="form-group mt-4">
+            <input type="text" placeholder="موضوع پیام" class="form-control mt-2 text-muted" required>
+        </div>
+        <div class="form-group mt-4">
+             <textarea class="form-control" placeholder="پیام" id="floatingTextarea2" style="height: 100px" required></textarea>
+        </div>
+        <button class="btn btn-outline-light w-50 p-2 mt-4">ارسال پیام</button>
+    </form>
+    <div class="mt-4">
+      <i class="bi bi-geo-alt fs-5 icon3"> قم میدان صدوقی خیابان۲۵ پلاک۹ </i>
+      <div class="mt-2">
+        <i class="bi bi-telephone fs-5 icon3">  ۰۲۵-۳۷۷۵۶۴۳    ۰۲۵-۳۷۷۹۸۴۳</i>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7 mt-2">
+  <img src="{% static 'public/pictures/picture6.PNG' %}" class="img-fluid">
+  </div>
+</div>
+<!--end formContact us-->
+</div>
+<!-- start footer-->
+
+      </div>
+      <div class="row">
+        <p></p>
+      </div>
+    </div>
+  </div>
+<!-- end footer-->
+{% endblock %}

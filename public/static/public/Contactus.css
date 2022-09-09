@@ -1,0 +1,43 @@
+.h3{
+  font-weight: bold;
+  font-size: 1.5rem;
+  color:#9932cc;
+}
+input[type="email"]{
+  text-align: right;
+  direction:ltr;
+}
+
+.form-group-Contactus input{
+  border:1px solid #9932cc !important;
+  border-radius:0.5rem !important ;
+  transition:all 0.5s ease;
+  padding:10px !important;
+  font-size:13px ;
+  color:#78797c ;
+}
+.form-group-Contactus input:focus{
+  border:1px solid #9932cc !important;
+  border-radius:0.7rem !important ;
+  padding:10px !important;
+}
+
+
+.form-group-Contactus textarea{
+  border:1px solid #9932cc !important;
+  border-radius:0.5rem !important ;
+  transition:all 0.5s ease;
+  padding:10px !important;
+  font-size:13px ;
+  color:#78797c ;
+}
+.form-group-Contactus textarea:focus{
+  border:1px solid #9932cc !important;
+  border-radius:0.7rem !important ;
+  padding:10px !important;
+}
+.icon3{
+  color:#9932cc;
+}
+.btn.btn-outline-light.w-50.p-2.mt-4{background-color:#9932cc; color:#ffff !important;}
+.btn.btn-outline-light.w-50.p-2.mt-4:hover{background-color:#ffff; color:#9932cc !important; }

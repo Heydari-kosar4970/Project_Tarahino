@@ -1,0 +1,60 @@
+* {
+    direction: rtl;
+    text-decoration: none !important;
+    list-style-type: none !important;
+}
+a{
+  color:#9932cc ;
+}
+a:hover{
+  color:#9932cc;
+}
+.fw-bold.py-4{
+  color: #9932cc;
+}
+.icon1{
+  color:#ebeafb;
+  background-color:#9932cc ;
+  display:inline-flex;
+  padding: 15px;
+  border-radius: 15px;
+}
+.icon2{
+  color:#FF70A6;
+}
+.btn.btn-outline-light{background-color:#9932cc; color:#ffff  !important;}
+.card1{
+      color: #9932cc;
+}
+.card-body{
+      border-radius: 0.5rem;
+}
+.card.shadow.text-center.mt-4{
+        border-radius: 0.5rem;
+}
+
+/*بهترین دوره ها*/
+.p1{
+  font-weight: bold;
+    margin: 20px 0 !important;
+    font-size: 20px;
+    text-align: center;
+    color: #9932cc;
+  }
+.title-c{
+    font-size:17px;
+    margin-bottom: 18px;
+}
+.card-main-course{
+    box-shadow: 0 0 20px #ebeafb !important;
+    border-radius: 0.5rem !important;
+    overflow: hidden !important;
+    margin:10px 0 ;
+}
+.footer-main-course{
+    border-top: 1px solid #d3d3d3;
+}
+.img1{
+    border-radius: 15px;
+}
+/*بهترین دوره ها*/
