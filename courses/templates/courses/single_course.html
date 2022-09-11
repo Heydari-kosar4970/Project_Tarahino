@@ -124,6 +124,23 @@
                     {% endfor %}
                 </ul>
             </div>
+            {% if user.is_authenticated %}
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingfive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapsefive" aria-expanded="false"
+                                aria-controls="flush-collapsefive">
+                            آزمون
+                        </button>
+                    </h2>
+                    <div id="flush-collapsefive" class="accordion-collapse collapse"
+                         aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><a href="{% url 'test_page' course.id %}">
+                            <button type="button" class="btn btn-warning">آزمون</button>
+                        </a></div>
+                    </div>
+                </div>
+            {% endif %}
         </div>
 
         <div class="row ">
