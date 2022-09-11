@@ -19,7 +19,7 @@
                             <hr class="Hr">
                             <form class="form-group-signing" method="POST">
                                 {% csrf_token %}
-                                {{ login_form.as_div }}
+                                {{ login_form.as_ul }}
                                 <button class="btn btn-outline-light  p-2 mt-5">ورود</button>
                             </form>
                             <div class="justify-content-between align-items-center d-flex mt-5">

@@ -12,7 +12,9 @@
 {% block body %}
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-            {% include 'articles/includes/articles_thumbnail.html' %}
+            {% for article in articles %}
+                {% include 'articles/includes/articles_thumbnail.html' %}
+            {% endfor %}
         </div>
     </div>
 {% endblock %}

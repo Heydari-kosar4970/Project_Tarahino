@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from courses.models import CourseModel
 
 
 def index_page(request):

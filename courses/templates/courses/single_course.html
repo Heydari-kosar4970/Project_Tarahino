@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'courses/singlecourse.css' %}">
+    <link rel="stylesheet" href="{% static 'courses/style.css' %}">
+
+
+{% endblock %}
+{% block title %} {{ course.title }} {% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="row row1 align-items-center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 pt-4 ps-4">
+                <h3 style="color:#8E24AA;" class="mb-2">{{ course.title }}</h3>
+                <p>{{ course.sub_description }}.</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 d1">
+                <img src="{{ course.cover.url }}" class="img-fluid py-2" width="100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                <h3 class="pt-4 px-2" style="color:#8E24AA;">توضیحات</h3>
+                {{ course.description }}
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 ">
+                <div class="row mt-3">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 col-xxl-3">
+                        <div class="card shadow text-center mt-2">
+                            <div class="card-body">
+                                <i class="bi bi-clock icon5"></i>
+                                <p class="card-title">مدت:</p>
+                                <p class="card-text">{{ course.duration }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 col-xxl-3">
+                        <div class="card shadow text-center mt-2">
+                            <div class="card-body">
+                                <i class="bi bi-grid icon5"></i>
+                                <p class="card-title">جلسات:</p>
+                                <p class="card-text">۴</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 col-xxl-3">
+                        <div class="card shadow text-center mt-2">
+                            <div class="card-body">
+                                <i class="bi bi-patch-check icon5"></i>
+                                <p class="card-title">نوع :</p>
+                                <p class="card-text">{{ course.type }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 col-xxl-3">
+                        <div class="card shadow text-center mt-2">
+                            <div class="card-body">
+                                <i class="bi bi-person icon5"></i>
+                                <p class="card-title">مدرس:</p>
+                                <p class="card-text">{{ course.teacher_name }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mx-auto mt-3 mb-1">
+                        <div class="card shadow  mt-2">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <div class="text-cente pt-2">
+                                    <img src="{% static 'courses/images/gerl.png' %}" class="rounded mx-auto d-block"
+                                         width="40">
+                                </div>
+                                <p class="pt-1">{{ course.teacher_introduction }}</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    {% comment %}<div>
+                        <ul class="list-group mt-3">
+                            <li class="list-group-item list-group-item-dark"> اطلاعات دوره</li>
+                            <li class="list-group-item"><i class="bi bi-cash icon-1"></i> هزینه دوره:رایگان</li>
+                            <li class="list-group-item"><i class="bi bi-book icon-1"></i> سطح دوره: از مبتدی تا پیشرفته
+                            </li>
+                            <li class="list-group-item"><i class="bi bi-stoplights icon-1"></i> پیش نیاز: ترجیحا اصول
+                                طراحی رابط کاربر
+                            </li>
+                            <li class="list-group-item"><i class="bi bi-laptop icon-1"></i> نرم افزار: Adobe XD</li>
+                            <li class="list-group-item"><i class="bi bi-person-rolodex icon-1"></i> روش پشتیبانی: تلگرام
+                            </li>
+                            <li class="list-group-item"><i class="bi bi-send icon-1"></i> آیدی تلگرام:tarahino</li>
+                            <li class="list-group-item"><i class="bi bi-globe icon-1"></i> زبان: فارسی</li>
+                            <li class="list-group-item"><i class="bi bi-file-earmark icon-1"></i> فرمت: MP4</li>
+                            <li class="list-group-item"><i class="bi bi-clock icon-1"></i> شناور</li>
+                            <li class="list-group-item"><i class="bi bi-journals icon-1"></i> ۴ فصل</li>
+                            <li class="list-group-item"><i class="bi bi-list-check icon-1"></i> درصد پیشرفت دوره: %۱۰۰
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                         aria-valuenow="100" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                        ۱۰۰%
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>{% endcomment %}
+                </div>
+            </div>
+        </div>
+        <!-- end line2-->
+        <!-- start line3-->
+
+
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                <ul class="list-group list-group-flush">
+                    {% for headline in headlines %}
+                        <li class="list-group-item">{{ headline.title }}
+                            <a href="{{ headline.video_link }}"
+                               target="blank">
+                                <button type="button" class="btn btn-outline-light">مشاهده ویدئو</button>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                <h5 class="h3 pt-3 px-2">دیدگاه خود را بنویسید</h5>
+                <form class="form-group-Comments">
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <div class="form-group pt-4 px-2">
+                                <input type="text" placeholder="نام و نام خانوادگی" class="form-control text-muted"
+                                       required>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-group px-2">
+                                <input type="email" placeholder="ایمیل" class="form-control mt-4 text-muted" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group pt-4 px-2 pb-3">
+                        <textarea class="form-control" placeholder="پیام" id="floatingTextarea2" style="height: 100px"
+                                  required></textarea>
+                    </div>
+                    <button class="btn btn-outline-light  my-3 ms-2">ارسال پیام</button>
+                </form>
+            </div>
+        </div>
+        <!--endform-->
+    </div>
+
+    </br></br>
+    <!-- start footer-->
+
+    <!-- end footer-->
+{% endblock %}

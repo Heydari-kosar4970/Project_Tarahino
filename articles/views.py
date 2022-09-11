@@ -1,31 +1,14 @@
 from django.shortcuts import render
-
-
-data_list = [
-    {
-        'titel': 'چگونه UIUX کار شویم؟',
-        'image': 'how-to-become-ui-ux-designer.jpg',
-    }, {
-        'teacher': 'تجربه کاربری (UX) چیست؟',
-        'titel': 'what-is-ux.jpg',
-    }, {
-        'teacher': 'طراحی UI و طراحی UX چیست؟',
-        'titel': 'picture5.png',
-    }, {
-        'teacher': 'اصول گشتالت در طراحی UI(رابط کاربری)',
-        'titel': 'gestalt-principles.jpg',
-    },{
-        'teacher': 'طراحی رابط کاربری به سبک حرفه ای ها در Adobe XD',
-        'titel': 'xd-design.jpg',
-    },
-]
+from .models import *
 
 
 def articles_page(request):
-    return render(request, 'articles/articles.html')
+    articles = ArticleModel.objects.all()
+    return render(request, 'articles/articles.html', {'articles': articles})
 
 
-def uiux_page(request):
-    return render(request, 'articles/uiux.html')
+def single_article_page(request, article_id):
+    article = ArticleModel.objects.get(id=article_id)
+    return render(request, 'articles/single_article.html', {'article': article})
 
 

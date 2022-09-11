@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'articles/Singlearticles.css' %}">
+    <link rel="stylesheet" href="{% static 'articles/style.css' %}">
+
+
+{% endblock %}
+{% block title %} تک مقاله {% endblock %}
+
+{% block body %}
+    <div class="container">
+        <!--start Search and register -->
+
+        <!--end Search and register -->
+        <!--start menu-->
+
+        <!--end menu-->
+        <!--start Article-->
+        <div class="row ">
+            <div class="col-12 col-sm-12 col-md-9 col-lg-9">
+                <div>
+                    <h3 class="fw-bold">{{ article.title }}</h3>
+                    <P class="mt-2"><img src="{% static 'articles/pictures/clock.png' %}" alt="" width="24" height="24"
+                                         class="d-inline-block align-text-top">
+                        {{ article.updated_at }}   </P>
+                    <img src="{{ article.primary_image.url }}" class="img-fluid mt-3">
+                    {{ article.content|safe }}
+                </div>
+            </div>
+            <!--start sid-->
+{#            <div class="col-12 col-sm-12 col-md-3 col-lg-3">#}
+{#                <h5 class="mx-auto mb-5 mt-3">مقالات اخیر</h5>#}
+{#                <div class="card mt-3">#}
+{#                    <h6 class="card-header">طراحی UI و طراحی UX چیست؟</h6>#}
+{#                    <div class="card-body">#}
+{#                        <p class="card-text">طراحی UI و طراحی UX دو تا از قاعد طراحی وب و اپ هستند كه بسیار باهم اشتباه#}
+{#                            گرفته می‌شوند. و اشتباه نیز درك می‌شوند. </p>#}
+{#                        <a href="{% comment %}{% url 'designeruiux_page' %}{% endcomment %}" class="btn btn-light"#}
+{#                           target="_blank">بیشتر بخوانید</a>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="card mt-3">#}
+{#                    <h6 class="card-header">طراحی رابط کاربری به سبک حرفه ای ها در Adobe XD</h6>#}
+{#                    <div class="card-body">#}
+{#                        <p class="card-text">نرم افزارهای تخصصی طراحی رابط کاربری مانند Adobe XD، Sketch، Figma و … به#}
+{#                            وجود آمده اند که روند کار طراحان رابط کاربری را روز به روز ساده تر، کارامد تر و حرفه ای تر#}
+{#                            کنند</p>#}
+{#                        <a href="{% comment %}{% url 'adobexd_page' %}{% endcomment %}" class="btn btn-light"#}
+{#                           target="_blank">بیشتر بخوانید</a>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="card mt-3">#}
+{#                    <h6 class="card-header">تجربه کاربری (UX) چیست؟</h6>#}
+{#                    <div class="card-body">#}
+{#                        <p class="card-text">تجربه کاربری یا User Experience یا به اختصار UX یکی از مهم ترین مفاهیمی است#}
+{#                            که این روزها در دنیای تکنولوژی و فناوری و حتی زندگی روزمره به کرات شنیده می شود</p>#}
+{#                        <a href="{% comment %}{% url 'ux_page' %}{% endcomment %}" class="btn btn-light"#}
+{#                           target="_blank">بیشتر بخوانید</a>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="card mt-3">#}
+{#                    <h6 class="card-header">اصول گشتالت در طراحی UI(رابط کاربری)</h6>#}
+{#                    <div class="card-body">#}
+{#                        <p class="card-text">مغز شما همیشه با مقایسه تجربیات یا تصاویر گذشته و اتصال نقاط بین آنها، تلاش#}
+{#                            در درک جهان دارد. مغز شیوه ای عجیب در درک اشکال، جمع آوری اطلاعات، و پر کردن جاهای خالی برای#}
+{#                            ایجاد تصویر بزرگ تر دارد.</p>#}
+{#                        <a href="{% comment %}{% url 'gestalt_page' %}{% endcomment %}" class="btn btn-light"#}
+{#                           target="_blank">بیشتر بخوانید</a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+            <!--end sid-->
+        </div>
+
+        <!--end Articles-->
+        <!--startform-->
+{#        <div class="row ">#}
+{#            <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 col-xxl-9">#}
+{#                <h5 class="h3">دیدگاه خود را بنویسید</h5>#}
+{#                <form class="form-group-Comments">#}
+{#                    <div class="row g-2">#}
+{#                        <div class="col-md">#}
+{#                            <div class="form-group mt-5">#}
+{#                                <input type="text" placeholder="نام و نام خانوادگی" class="form-control text-muted"#}
+{#                                       required>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="col-md">#}
+{#                            <div class="form-group mt-5">#}
+{#                                <input type="email" placeholder="ایمیل" class="form-control mt-4 text-muted" required>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="form-group mt-4">#}
+{#                        <textarea class="form-control" placeholder="پیام" id="floatingTextarea2" style="height: 100px"#}
+{#                                  required></textarea>#}
+{#                    </div>#}
+{#                    <button class="btn btn-outline-light  p-2 mt-4">ارسال پیام</button>#}
+{#                </form>#}
+{#            </div>#}
+{#        </div>#}
+        <!--endform-->
+    </div>
+    </br></br>
+    <!-- start footer-->
+{% endblock %}

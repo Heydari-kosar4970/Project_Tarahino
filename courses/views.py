@@ -1,45 +1,12 @@
 from django.shortcuts import render
-
-data_list = [
-    {
-        'teacher': 'کوثر حیدری',
-        'name': 'دوره آموزشی جامع پروژه محور Adobe XD',
-        'image': 'adobe-xd-course-thumbnail-400x229.jpg',
-    }, {
-        'teacher': 'کوثر حیدری',
-        'name': 'دوره آموزش طراحی اصولی رابط کاربری(UI)',
-        'image': 'adobe-xd-course-thumbnail-400x229.jpg',
-    }, {
-        'teacher': 'کوثر حیدری',
-        'name': 'دوره متخصص تجربه کاربری (UX)',
-        'image': 'adobe-xd-course-thumbnail-400x229.jpg',
-    }, {
-        'teacher': 'کوثر حیدری',
-        'name': 'دوره منتورشیپ طراحی UI و UX',
-        'image': 'adobe-xd-course-thumbnail-400x229.jpg',
-    },
-    {
-        'teacher': 'کوثر حیدری',
-        'name': 'دوره منتورشیپ طراحی UI و UX',
-        'image': 'adobe-xd-course-thumbnail-400x229.jpg',
-    },
-
-    {
-        'teacher': 'کوثر حیدری',
-        'name': 'دوره منتورشیپ طراحی UI و UX',
-        'image': 'adobe-xd-course-thumbnail-400x229.jpg',
-    },
-    {
-        'teacher': 'کوثر حیدری',
-        'name': 'دوره منتورشیپ طراحی UI و UX',
-        'image': 'adobe-xd-course-thumbnail-400x229.jpg',
-    },
-]
+from .models import *
 
 
 def courses_page(request):
-    return render(request, 'courses/course_list.html', {'courses': data_list})
+    return render(request, 'courses/course_list.html')
 
 
-def courseadobexd_page(request):
-    return render(request, 'courses/courseadobexd.html')
+def single_course_page(request, course_id):
+    selected_course = CourseModel.objects.filter(id=course_id).first()
+    headlines = CourseHeadlinesModel.objects.filter(course_id=course_id)
+    return render(request, 'courses/single_course.html', {'course': selected_course, 'headlines': headlines})

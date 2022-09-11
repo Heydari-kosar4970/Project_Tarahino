@@ -6,7 +6,7 @@
                  class="d-inline-block align-text-top">
         </div>
 
-{% comment %}        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-3">
+        {% comment %}        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-3">
                     <form class="d-flex mt-2">
             <input class="form-control me-2" type="search" placeholder="نام دوره را وارد کنید..."
                    aria-label="Search">
@@ -17,15 +17,18 @@
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mt-3">
             <nav class="navbar">
                 <p>{{ user.username }}</p>
-                <form class="container-fluid flex-column">
-                    <button class="btn btn-outline-light" type="button">
-                        {% if user.is_authenticated %}
+                    {% if user.is_authenticated %}
+                        <button class="btn btn-outline-light" type="button">
                             <a href="{% url 'logout_user' %}" target="_blank">خروج از حساب کاربری</a>
-                        {% else %}
+                        </button>
+                        <button class="btn btn-outline-light" type="button">
+                            <a href="{% url 'load_dashboard_page' %}" target="_blank">ورود به داشبورد</a>
+                        </button>
+                    {% else %}
+                        <button class="btn btn-outline-light" type="button">
                             <a class="kosar" href="{% url 'registration_page' %}" target="_blank">ورود/ثبت نام</a>
-                        {% endif %}
-                    </button>
-                </form>
+                        </button>
+                    {% endif %}
             </nav>
         </div>
     </div>

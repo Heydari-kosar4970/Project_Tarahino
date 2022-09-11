@@ -21,18 +21,16 @@
                                    id="navbarDropdown"
                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">دوره ها</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="{% url 'courses_page' %}" target="_blank">همه
-                                        دوره
-                                        ها</a>
+                                    <li>
+                                        <a class="dropdown-item" href="{% url 'courses_page' %}" target="_blank">
+                                            همه دوره ها
+                                        </a>
                                     </li>
-                                    <li><a class="dropdown-item" href=""
-                                           target="_blank">دوره منتورشیپ طراحی UI و UX</a></li>
-                                    <li><a class="dropdown-item" href=""
-                                           target="_blank">دوره متخصص تجربه کاربری (UX)</a></li>
-                                    <li><a class="dropdown-item" href="{% url 'courseadobexd_page' %}"
-                                           target="_blank">دوره آموزشی جامع پروژه محور Adobe XD</a></li>
-                                    <li><a class="dropdown-item" href=""
-                                           target="_blank">دوره آموزش طراحی اصولی رابط کاربری(UI)</a></li>
+                                    {% for course in courses %}
+                                        <li>
+                                            <a class="dropdown-item" href="{% url 'single_course_page' course.id %}" target="_blank">{{ course.title }}</a>
+                                        </li>
+                                    {% endfor %}
                                 </ul>
                             </li>
                             <li class="nav-item">
